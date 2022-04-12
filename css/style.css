@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Ewert&display=swap');
+ 
+body {
+    background-color: pink;
+    overflow:visible;
+}
+ 
+.pealkiri {
+    margin: 0 auto;
+    text-align:center;
+    font-family: 'Ewert', cursive;
+    font: size 1.5rem;
+    position: relative;
+    animation: textleft;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+ 
+@keyframes textleft {
+    0% {left: -900px;}
+    100% {left: 1000px;}
+ 
+}
+ 
+.salat {
+    color: black;
+    font-family: 'Ewert', cursive;
+    font-size: 5rem;
+ 
+}
+ 
+.pilt {
+    border: 3px solid black;
+    margin: 0 auto;
+    width: 15.4%;
+    position: relative;
+    animation: keerleb;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+ 
+@keyframes keerleb {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    }
+ 
+.koostisosad {
+    border: 3px solid black;
+    width: 30%;
+    margin: 0 auto;
+    padding-top: 15px;
+    margin-top: 30px;
+    position: relative;
+    text-align: right;
+    animation: textright;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes textright {
+    0% {right: -1000px;}
+    100% {right: 450px;}
+}
+   
+.koostisainete table {
+    border: 1px solid black;
+    margin: 0 auto;
+}
+ 
+.valmistamine {
+    opacity: 0;
+    border: 3px solid black;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    animation: textleft;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+}
+ 
+@keyframes textleft {
+    0% {left: -1000px; opacity: 0;}
+    100% {left: 500px; opacity: 1;}
+}
+ 
+.valmistamine ol {
+    margin-top: 50px;
+    width: 75%;
+}
+
